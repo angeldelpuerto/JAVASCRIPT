@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tarea 5</title>
+</head>
+<body>
+	<form>
+		<textarea id="texto" placeholder="Agregue un comentario"></textarea>
+		<input type="submit">
+		<div>Caracteres:<span id="contar"></span></div>
+	</form>
+	<script>
+		const texto= document.getElementById('texto')
+		const contar= document.getElementById('contar')
+
+		texto.addEventListener('keyup', function(){
+			contar.innerText=texto.value.length;
+		})
+		
+		
+	</script>
+</body>
+</html>
